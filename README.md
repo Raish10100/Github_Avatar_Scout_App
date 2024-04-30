@@ -59,7 +59,7 @@ Contributions are welcome! To contribute to this project, follow these steps:
 
 ## Credits
 
-This project was created by [Raish Vadaviya]. It utilizes user details github [API](https://api.github.com/) for assignment purposes.
+This project was created by [Raish Vadaviya](https://linktr.ee/Raish101001). It utilizes user details github [API](https://api.github.com/) for assignment purposes.
 
 ## Contact
 
