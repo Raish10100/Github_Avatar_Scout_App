@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Assignment-2 of Walking with REACT Part-3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Github Avatar Scout App
 
-## Available Scripts
+This React-based Github Avatar Scout App enables users to effortlessly browse through a Github username and view their avatar.
 
-In the project directory, you can run:
+## Preview
 
-### `npm start`
+### Website Link
+[Github Avatar Scout App](https://github-avatar-scout.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Photos
+![Home Page](https://res.cloudinary.com/deodsnio3/image/upload/v1714454030/img_1_github_avatar_scout.png "Home Page")
+*Caption: Home page of the Github Avatar Scout App*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Home Page After Search](https://res.cloudinary.com/deodsnio3/image/upload/v1714454029/img_2_github_avatar_scout.png "Home Page After Search")
+*Caption: Home Page After Search of the Github Avatar Scout App*
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home Page** : Users can search for their GitHub username and view their avatar.
+- **Avatar Display** : Users can instantly see their avatar after entering their GitHub username.
+- **User-Friendly Interface** : The app provides a simple and intuitive interface for a seamless user experience.
+- **Fast and Efficient** : Utilizes efficient API calls to fetch and display avatars quickly.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine.
+2. Open the terminal and navigate to the project directory.
+3. Install dependencies: `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Usage
 
-### `npm run eject`
+1. Start the development server: `npm run start`
+2. Open your web browser and go to `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+No additional configuration is required for this project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! To contribute to this project, follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m "Add your changes"`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org) - A powerful JavaScript library for building user interfaces.
+- [React Router Dom](https://reactrouter.com) - Declarative routing for React applications.
+- [Axios](https://axios-http.com) - Promise-based HTTP client for making API requests.
+- JSX/CSS - The markup and styling languages used in React development.
 
-### Code Splitting
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project was created by [Raish Vadaviya]. It utilizes user details github [API](https://api.github.com/) for assignment purposes.
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Contact Me](linktr.ee/Raish101001)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
