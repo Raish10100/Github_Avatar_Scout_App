@@ -4,7 +4,8 @@ import './Avatar.css'
 
 const Avatar = ({username,inputValueLength}) => {
 
-const [avatarUrl,setAvatarUrl] = useState(null)
+const [avatarUrl,setAvatarUrl] = useState(null);
+const [profileUrl, setProfileUrl] = useState(null);
 
 async function fetchData() {
   // console.log(`input length : ${inputValueLength}`)
@@ -12,6 +13,7 @@ async function fetchData() {
       const userAvatarUrl = await downloadAvatar(username);
       console.log("debugging")
       setAvatarUrl(userAvatarUrl);
+      setProfileUrl(`https://github.com/${username}`)
     } catch (error) {
       console.error('Error fetching avatar:', error);
     }
@@ -19,7 +21,7 @@ async function fetchData() {
 }
 fetchData()
 
-const demoAvatar = ["Raish","Sanket","Santosh","Amitabh","Rahul","Hitesh","Harshil","Riyaz","Aryan"]
+const demoAvatar = ["Raish10100","Sanket","Santosh","Amitabh","Rahul","Hitesh","Harshil","Riyaz","Aryan"]
 
 
 return (
@@ -30,11 +32,13 @@ return (
         <div className="avatar-container">
           <div className="avatar">
             <span className="avatar-name">{username}</span>
-            <img
-              className="avatar-image"
-              src={avatarUrl}
-              alt=""
-            />
+            <a href={profileUrl} target='_blank'  rel="noopener noreferrer">
+              <img
+                className="avatar-image"
+                src={avatarUrl}
+                alt=""
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -44,11 +48,13 @@ return (
         {demoAvatar.map((avatar, index) => (
           <div className="avatar" key={index}>
             <span className="avatar-name">{avatar}</span>
-            <img
-              className="avatar-image"
-              src={`https://randomuser.me/api/portraits/men/${index + 1}.jpg`}
-              alt={`Avatar ${index + 1}`}
-            />
+            <a href={`https://github.com/${avatar}`} target='_blank'  rel="noopener noreferrer">
+              <img
+                className="avatar-image"
+                src={`https://randomuser.me/api/portraits/men/${index + 1}.jpg`}
+                alt={`Avatar ${index + 1}`}
+              />
+            </a>
           </div>
         ))}
       </div>

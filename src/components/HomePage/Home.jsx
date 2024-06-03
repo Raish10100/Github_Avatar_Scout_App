@@ -10,8 +10,6 @@ const Home = () => {
   const debounceUpdateSearch = useDebounce((e) => 
   {
    
-
-   
       setInputValueLength(e.target.value.length)
     
     console.log(e.target.value.length)
@@ -23,7 +21,7 @@ const Home = () => {
   return (
     <div className='home-page'>
       <h1 className="app-title">Github Avatar Scout</h1>
-      <input className='search' placeholder='Search for a Github username'  type='text' onChange={debounceUpdateSearch} />
+      <input className='search' placeholder='Search by your github username'  type='text' onChange={debounceUpdateSearch} />
       {/* <h1>Search: { updateSearchTerm }</h1> */}
       <Avatar username={updateSearchTerm} inputValueLength={inputValueLength} />
     </div>
