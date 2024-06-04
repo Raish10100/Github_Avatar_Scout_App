@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import downloadAvatar from '../../utils/downloadAvatar';
 import './Avatar.css'
-import axios from 'axios';
 
 const Avatar = ({username,inputValueLength}) => {
 
@@ -9,7 +8,6 @@ const [avatarUrl,setAvatarUrl] = useState(null);
 const [profileUrl, setProfileUrl] = useState(null);
 
 async function fetchData() {
-  // console.log(`input length : ${inputValueLength}`)
     try {
       const userAvatarUrl = await downloadAvatar(username);
       setAvatarUrl(userAvatarUrl);
@@ -17,10 +15,10 @@ async function fetchData() {
     } catch (error) {
       console.error('Error fetching avatar:', error);
     }
-   
+ 
+    console.log(avatarUrl)
 }
 
-// const demoAvatar = ["Raish10100","Sanket","Santosh","Amitabh","Rahul","Hitesh","Harshil","Riyaz","Aryan"]
 
 const demoAvatar = [
   {
@@ -67,7 +65,6 @@ fetchData()
 
 return (
   <>
-    {/* <h1>Avatar</h1> */}
     {inputValueLength ?               (
       <div className="container">
         <div className="avatar-container">
@@ -93,11 +90,11 @@ return (
               <img
                 className="avatar-image"
                 src={avatar.avatarUrl}
-                alt={`Avatar ${index + 1}`}
+                alt={`Demo Avatar`}
               />
             </a>
           </div>
-        ))}
+         ))} 
       </div>
     </div>
   )}
